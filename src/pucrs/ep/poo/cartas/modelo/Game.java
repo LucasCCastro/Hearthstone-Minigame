@@ -7,105 +7,89 @@ import java.util.*;
 
 public class Game extends Observable{
     private static Game game = new Game();
-    private int ptsJ1,ptsJ2;
-    private CardDeck deckJ1,deckJ2;
-    private int player;
-    private int jogadas;
+    private int lifePlayer1, lifePlayer2;
+    private CardDeck deckP1, deckP2;
+    private boolean player; //P1 = true//P2 = false//
+
     
     public static Game getInstance(){
         return(game);
     }
     
     private Game(){
-        ptsJ1 = 0;
-        ptsJ2 = 0;
-        deckJ1 = new CardDeck();
-        deckJ2 = new CardDeck();
-        player = 1;
-        jogadas = CardDeck.NCARDS;
+        lifePlayer1 = 30;
+        lifePlayer2 = 30;
+        deckP1 = new CardDeck();
+        deckP2 = new CardDeck();
+        player = true;
+
     }
     
     private void nextPlayer(){
-        player++;
-        if (player == 4){
-            player = 1;
+        if(player){
+            this.player = false;
+        }
+        else {
+            this.player = true;
         }
     }
-        
-    public int getPtsJ1(){
-        return(ptsJ1);
+
+    public int getLifePlayer1() {
+        return lifePlayer1;
     }
 
-    public int getPtsJ2(){
-        return(ptsJ2);
+    public int getLifePlayer2() {
+        return lifePlayer2;
     }
-    
-    public CardDeck getDeckJ1(){
-        return(deckJ1);
+
+    public CardDeck getDeckP1() {
+        return deckP1;
     }
-    
-    public CardDeck getDeckJ2(){
-        return(deckJ2);
+
+    public CardDeck getDeckP2() {
+        return deckP2;
     }
-    
+
     public void play(CardDeck deckAcionado){
         GameEvent gameEvent = null;
 
-        if (player == 3){
-                gameEvent = new GameEvent(GameEvent.Target.GWIN,GameEvent.Action.MUSTCLEAN,"");
-                setChanged();
-                notifyObservers((Object)gameEvent);
-                return;
-        }        
-        if (deckAcionado == deckJ1){
-            if (player != 1){
+        if (deckAcionado == deckP1){
+            if (!player){
                 gameEvent = new GameEvent(GameEvent.Target.GWIN,GameEvent.Action.INVPLAY,"2");
                 setChanged();
-                notifyObservers((Object)gameEvent);
+                notifyObservers(gameEvent);
             }else{
-                // Vira a carta
-                deckJ1.getSelectedCard().flip();
-                // Proximo jogador
+                //
+                //
+                //Tudo que o P1 tem pra fazer vai ficar aqui
+                //
+                //
+                if(lifePlayer2 <= 0) {
+                    //
+                    //Aqui fica o que acontece caso o P2 ganhe a partida
+                    //
+                }
                 nextPlayer();
             }
-        }else if (deckAcionado == deckJ2){
-            if (player != 2){
-                gameEvent = new GameEvent(GameEvent.Target.GWIN,GameEvent.Action.INVPLAY,"2");
+        }else if (deckAcionado == deckP2){
+            if (player){
+                gameEvent = new GameEvent(GameEvent.Target.GWIN,GameEvent.Action.INVPLAY,"1");
                 setChanged();
-                notifyObservers((Object)gameEvent);
+                notifyObservers(gameEvent);
             }else{
-                // Vira a carta
-                deckJ2.getSelectedCard().flip();
-                // Verifica quem ganhou a rodada
-                if (deckJ1.getSelectedCard().getValue() > deckJ2.getSelectedCard().getValue()){
-                    ptsJ1++;
-                }else if (deckJ1.getSelectedCard().getValue() < deckJ2.getSelectedCard().getValue()){
-                    ptsJ2++;
+                //
+                //
+                //Tudo que o P2 tem pra fazer vai ficar aqui
+                //
+                //
+                if(lifePlayer1 <= 0) {
+                    //
+                    //Aqui fica o que acontece caso o P2 ganhe a partida
+                    //
                 }
-                setChanged();
-                notifyObservers((Object)gameEvent);
-                // Próximo jogador
                 nextPlayer();
             }
         }          
     }
 
-    // Acionada pelo botao de limpar    
-    public void removeSelected(){
-        GameEvent gameEvent = null;
-        
-        if (player != 3){
-            return;
-        }
-        jogadas--;
-        if (jogadas == 0){
-            gameEvent = new GameEvent(GameEvent.Target.GWIN,GameEvent.Action.ENDGAME,"");
-            setChanged();
-            notifyObservers((Object)gameEvent);
-            //return;
-        }
-        deckJ1.removeSel();
-        deckJ2.removeSel();
-        nextPlayer();
-    }
 }

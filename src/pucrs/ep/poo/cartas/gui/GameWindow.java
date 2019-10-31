@@ -47,7 +47,7 @@ public class GameWindow extends Application implements Observer{
         butClean.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent e) {
-                Game.getInstance().removeSelected();
+                //algo
             }
         });
 
@@ -78,19 +78,13 @@ public class GameWindow extends Application implements Observer{
                     alert.setHeaderText("Jogada inválida!!");
                     alert.setContentText("Era a vez do jogador "+eg.getArg());
                     alert.showAndWait();
-                    break;                    
-                case MUSTCLEAN:
-                    alert = new Alert(AlertType.WARNING);
-                    alert.setTitle("Atenção !!");
-                    alert.setHeaderText(null);
-                    alert.setContentText("Utilize o botao \"Clean\"");
-                    alert.showAndWait();
-                    break;                    
+                    break;
+
                 case ENDGAME:
                     alert = new Alert(AlertType.WARNING);
                     alert.setTitle("Atenção !!");
                     alert.setHeaderText(null);
-                    alert.setContentText("Fim de Jogo !!");
+                    alert.setContentText("Fim de Jogo!!");
                     alert.showAndWait();
                     break;                    
             }

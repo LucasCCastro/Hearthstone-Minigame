@@ -12,6 +12,13 @@ public class Minion extends Card {
         this.type = aType;
     }
 
+    public Minion(String anId, String anImageId, int anAttack, int aDefense) {
+        super(anId, anImageId);
+        this.attack = anAttack;
+        this.defense = aDefense;
+        this.type = null;
+    }
+
     public int getAttack() {
         return attack;
     }

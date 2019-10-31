@@ -24,9 +24,9 @@ public class DeckView extends HBox implements CardObserver,Observer{
         
         cDeck = null;
         if (jogador == 1){
-            cDeck = Game.getInstance().getDeckJ1();
+            cDeck = Game.getInstance().getDeckP1();
         }else{
-            cDeck = Game.getInstance().getDeckJ2();
+            cDeck = Game.getInstance().getDeckP2();
         }
         cDeck.addObserver(this);
         
