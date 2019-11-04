@@ -27,6 +27,25 @@ public class Table extends Observable{
             return(tableCards.size());
         }
 
+        public boolean addCardToTheTable(Card aCard) {
+            if(aCard==null) return false;
+
+            if(tableCards.size() < MAXIMUMSIZE) {
+                tableCards.add(aCard);
+                return true;
+            }
+            return false;
+        }
+
+        public boolean removeCardFromTable(Card aCard) {
+            if(aCard != null) {
+                tableCards.remove(aCard);
+                return true;
+            }
+            return false;
+        }
+
+
 //        public void setSelectedCard(Card card){
 //            selected = card;
 //        }

@@ -2,18 +2,16 @@ package pucrs.ep.poo.cartas.cards;
 
 import java.util.*;
 
-
-
 public class Card extends Observable{
     private String id;
     private String imageId;
     private int cost;
-    private boolean faceUp;
+    //private boolean faceUp;
     
     public Card(String anId,String anImageId){
         this.id = anId;
         this.imageId = anImageId;
-        this.faceUp = true;
+       // this.faceUp = true;
     }
     
     public String getId(){
@@ -24,19 +22,21 @@ public class Card extends Observable{
         return(imageId);
     }
 
-    public boolean isFacedUp(){
-        return(faceUp);
-    }
+    public int getCost() { return cost; }
+
+//    public boolean isFacedUp(){
+//        return(faceUp);
+//    }
     
-    public void flip(){
-        if (faceUp == true){
-            faceUp = false;
-        }else{
-            faceUp = true;
-        }
-        setChanged();
-        notifyObservers();
-    }
+//    public void flip(){
+//        if (faceUp == true){
+//            faceUp = false;
+//        }else{
+//            faceUp = true;
+//        }
+//        setChanged();
+//        notifyObservers();
+//    }
 }
         
 

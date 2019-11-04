@@ -66,7 +66,7 @@ public class Game extends Observable{
                 //
                 if(lifePlayer2 <= 0) {
                     //
-                    //Aqui fica o que acontece caso o P2 ganhe a partida
+                    //Aqui fica o que acontece caso o P1 ganhe a partida
                     //
                 }
                 nextPlayer();
