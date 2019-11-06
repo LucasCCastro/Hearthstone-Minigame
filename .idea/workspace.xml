@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d574502f-a6db-4681-a450-af61f0c3a719" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx_swt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hearthstone-Minigame.iml" afterDir="false" />
+    <list default="true" id="2ca486e5-1eb7-4b9f-8cca-2f4001d76759" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/TemporaryDbOfMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DescricaoJogo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DescricaoJogo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/cards/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/cards/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/CardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/CardView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/PlacarView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/PlacarView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Table.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,15 +18,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1TAVaisDFDsmiXDQnNaAtEQqG1X" />
+  <component name="ProjectId" id="1TG7Y6UCf3aTOjuvDD3zJcd3xFz" />
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../PUCRS/3 sem/Alg &amp; Est I/arvoreBinaria" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib/javafx.web.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -43,18 +39,37 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="GameWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pucrs.ep.poo.cartas.gui.GameWindow" />
+      <module name="Hearthstone-Minigame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pucrs.ep.poo.cartas.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GameWindow" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d574502f-a6db-4681-a450-af61f0c3a719" name="Default Changelist" comment="" />
-      <created>1572902951234</created>
+      <changelist id="2ca486e5-1eb7-4b9f-8cca-2f4001d76759" name="Default Changelist" comment="" />
+      <created>1573074622900</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1572902951234</updated>
-      <workItem from="1572902952765" duration="1063000" />
-      <workItem from="1572909095764" duration="1075000" />
+      <updated>1573074622900</updated>
+      <workItem from="1573074624244" duration="2709000" />
     </task>
     <servers />
   </component>
@@ -66,9 +81,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>

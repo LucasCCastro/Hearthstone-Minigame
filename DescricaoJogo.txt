@@ -6,7 +6,7 @@ Instruções:
 - O jogador que tem sua vida menor ou igual a zero, eh o derrotado
 - O sistema verifica quem ganhou a partida depois de cada ataque realizado
 - Para iniciar uma nova partida e necessario clicar o botao "restart"
-- Quando as cartas acabam o jogo termina
+- Quando a vida de um jogador eh reduzida a zero ou menos, o jogo termina
 
 Implementacao:
 - A lógica do jogo e controlada pela classe "Game".

@@ -2,6 +2,7 @@ package pucrs.ep.poo.cartas.gui;
 
 import javafx.scene.control.Button;
 
+import java.awt.*;
 import java.util.*;
 import javafx.event.*;
 import pucrs.ep.poo.cartas.cards.Card;
@@ -31,11 +32,11 @@ public class CardView extends Button implements Observer{
     
     @Override
     public void update(Observable o,Object args){
-        if (card.isFacedUp()){
+//        if (card.isFacedUp()){
             this.setGraphic(ImageFactory.getInstance().createImage(card.getImageId()));
-        }else{
-            this.setGraphic(ImageFactory.getInstance().createImage("imgBck"));
-        }   
+//        }else{
+//            this.setGraphic(ImageFactory.getInstance().createImage("imgBck"));
+//        }
     }
     
     public void setCardObserver(CardObserver obs){
