@@ -5,15 +5,15 @@ public class Minion extends Card {
     private int defense;
     private MinionType type;
 
-    public Minion(String anId, String anImageId, int anAttack, int aDefense, MinionType aType) {
-        super(anId, anImageId);
+    public Minion(String anId, String anImageId,int cost, int anAttack, int aDefense, MinionType aType) {
+        super(anId, anImageId,cost);
         this.attack = anAttack;
         this.defense = aDefense;
         this.type = aType;
     }
 
-    public Minion(String anId, String anImageId, int anAttack, int aDefense) {
-        super(anId, anImageId);
+    public Minion(String anId, String anImageId, int cost, int anAttack, int aDefense) {
+        super(anId, anImageId, cost);
         this.attack = anAttack;
         this.defense = aDefense;
         this.type = null;

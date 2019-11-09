@@ -4,8 +4,8 @@ public class Spell extends Card{
     private SpellType type;
     private int value;
 
-    public Spell(String anId, String anImageId, SpellType aType, int aValue) {
-        super(anId, anImageId);
+    public Spell(String anId, String anImageId, int cost, SpellType aType, int aValue) {
+        super(anId, anImageId, cost);
         this.type = aType;
         this.value = aValue;
     }
