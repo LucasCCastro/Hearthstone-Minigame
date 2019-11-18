@@ -1,4 +1,4 @@
-package pucrs.ep.poo.cartas.cards;
+package pucrs.ep.poo.cartas.modelo;
 
 public class Spell extends Card{
     private SpellType type;

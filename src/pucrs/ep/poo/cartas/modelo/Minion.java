@@ -1,4 +1,4 @@
-package pucrs.ep.poo.cartas.cards;
+package pucrs.ep.poo.cartas.modelo;
 
 public class Minion extends Card {
     private int attack;

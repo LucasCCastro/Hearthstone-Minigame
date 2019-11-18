@@ -1,4 +1,4 @@
-package pucrs.ep.poo.cartas.cards;
+package pucrs.ep.poo.cartas.modelo;
 
 import pucrs.ep.poo.cartas.gui.CardView;
 

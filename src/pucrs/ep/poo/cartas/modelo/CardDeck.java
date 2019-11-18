@@ -1,6 +1,8 @@
-package pucrs.ep.poo.cartas.cards;
+package pucrs.ep.poo.cartas.modelo;
 
 import pucrs.ep.poo.cartas.gui.GameEvent;
+import pucrs.ep.poo.cartas.modelo.Card;
+import pucrs.ep.poo.cartas.modelo.CardsInitializer;
 
 import java.util.*;
 
@@ -10,18 +12,18 @@ public class CardDeck extends Observable{
     public static final int NCARDS = 5;
     private List<Card> deck;
     private Card selected;
-    
+
     public CardDeck(){
         CardsInitializer initializer = new CardsInitializer();
-       deck = new ArrayList<>();
-       selected = null;
+        deck = new ArrayList<>();
+        selected = null;
 
         for(int i = 0; i<NCARDS; i++) {
             deck.add(initializer.returnARandomCard());
         }
 
     }
-        
+
     public List<Card> getCards(){
         return(deck);
     }
@@ -29,7 +31,7 @@ public class CardDeck extends Observable{
     public int getNumberOfCards(){
         return(deck.size());
     }
-    
+
     public void removeSel(){
         if (selected == null){
             return;
@@ -39,14 +41,29 @@ public class CardDeck extends Observable{
         GameEvent gameEvent = new GameEvent(GameEvent.Target.DECK,GameEvent.Action.REMOVESEL,"");
         setChanged();
         notifyObservers(gameEvent);
-    }    
-        
+    }
+
     public void setSelectedCard(Card card){
         selected = card;
     }
-    
+
     public Card getSelectedCard(){
         return(selected);
+    }
+
+    public boolean killCard(Card aCard) {
+        if(aCard == null) return false;
+
+        this.deck.remove(aCard);
+        return true;
+    }
+
+    public void createOpponentHand(int size) {
+        this.deck = new ArrayList<>();
+        Card imgbackCard = new Card("imgBck");
+        for(int i = 0; i<size; i++) {
+            deck.add(imgbackCard);
+        }
     }
 }
 

@@ -1,8 +1,5 @@
 package pucrs.ep.poo.cartas.modelo;
 
-import pucrs.ep.poo.cartas.cards.Minion;
-import pucrs.ep.poo.cartas.cards.Spell;
-
 public class TemporaryDbOfMethods {
 
     //It is just a temporary concept

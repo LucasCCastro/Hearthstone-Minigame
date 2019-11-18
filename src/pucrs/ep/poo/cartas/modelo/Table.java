@@ -1,8 +1,5 @@
 package pucrs.ep.poo.cartas.modelo;
 
-import pucrs.ep.poo.cartas.cards.Card;
-import pucrs.ep.poo.cartas.gui.GameEvent;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Observable;

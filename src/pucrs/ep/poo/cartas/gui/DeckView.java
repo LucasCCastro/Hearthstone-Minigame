@@ -4,9 +4,9 @@ import java.util.*;
 
 import javafx.geometry.Pos;
 import javafx.scene.layout.HBox;
-import pucrs.ep.poo.cartas.cards.Card;
-import pucrs.ep.poo.cartas.cards.CardDeck;
-import pucrs.ep.poo.cartas.cards.CardObserver;
+import pucrs.ep.poo.cartas.modelo.Card;
+import pucrs.ep.poo.cartas.modelo.CardDeck;
+import pucrs.ep.poo.cartas.modelo.CardObserver;
 import pucrs.ep.poo.cartas.modelo.*;
 
 public class DeckView extends HBox implements CardObserver,Observer{

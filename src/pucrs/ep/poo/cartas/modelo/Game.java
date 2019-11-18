@@ -1,8 +1,8 @@
 package pucrs.ep.poo.cartas.modelo;
 
-import pucrs.ep.poo.cartas.cards.CardDeck;
 import pucrs.ep.poo.cartas.gui.GameEvent;
 import pucrs.ep.poo.cartas.gui.GameWindow;
+import pucrs.ep.poo.cartas.modelo.CardDeck;
 
 import java.util.*;
 
@@ -10,13 +10,14 @@ public class Game extends Observable{
     private static Game game = new Game();
     private int lifePlayer1, lifePlayer2;
     private int manaPlayer1, manaPlayer2;
-    private CardDeck deckP1, deckP2;
+    private CardDeck deckP1, deckP2, playDeck, opponentDeck;
+    private Table tableP1, tableP2, playTable, opponentTable;
     private boolean player; //P1 = true//P2 = false//
-    
+
     public static Game getInstance(){
         return(game);
     }
-    
+
     private Game(){
         this.lifePlayer1 = 30;
         this.lifePlayer2 = 30;
@@ -24,10 +25,16 @@ public class Game extends Observable{
         this.manaPlayer2 = 1;
         this.deckP1 = new CardDeck();
         this.deckP2 = new CardDeck();
+        this.playDeck = new CardDeck();
+        this.opponentDeck = new CardDeck();
+        this.tableP1 = new Table();
+        this.tableP2 = new Table();
+        this.playTable = new Table();
+        this.opponentTable = new Table();
         this.player = true;
 
     }
-    
+
     private void nextPlayer(){
         if(this.player){
             this.player = false;
@@ -70,6 +77,10 @@ public class Game extends Observable{
                 setChanged();
                 notifyObservers(gameEvent);
             }else{
+                this.playDeck = deckP1;
+                this.playTable = tableP1;
+                this.opponentTable = tableP2;
+                this.opponentDeck.createOpponentHand(deckP2.getNumberOfCards());
                 this.manaPlayer1++;
                 //
                 //
@@ -89,6 +100,10 @@ public class Game extends Observable{
                 setChanged();
                 notifyObservers(gameEvent);
             }else{
+                this.playDeck = deckP2;
+                this.playTable = tableP2;
+                this.opponentTable = tableP1;
+                this.opponentDeck.createOpponentHand(deckP1.getNumberOfCards());
                 this.manaPlayer2++;
                 //
                 //
@@ -102,7 +117,7 @@ public class Game extends Observable{
                 }
                 nextPlayer();
             }
-        }          
+        }
     }
 
 }
