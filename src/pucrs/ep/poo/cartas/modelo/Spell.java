@@ -1,6 +1,10 @@
 package pucrs.ep.poo.cartas.modelo;
 
-public class Spell extends Card{
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Observable;
+
+public class Spell extends Card {
     private SpellType type;
     private int value;
 
@@ -30,4 +34,5 @@ public class Spell extends Card{
         damage,
         healing
     }
+
 }

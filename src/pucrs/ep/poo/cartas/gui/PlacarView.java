@@ -10,18 +10,18 @@ import pucrs.ep.poo.cartas.modelo.Game;
 
 public class PlacarView extends GridPane implements Observer{
     private TextField ptsJ1,ptsJ2;
-    
+
     public PlacarView(){
         this.setAlignment(Pos.CENTER);
         this.setHgap(10);
         this.setVgap(10);
         this.setPadding(new Insets(25, 25, 25, 25));
-        
+
         Game.getInstance().addObserver(this);
-        
+
         ptsJ1 = new TextField();
         ptsJ2 = new TextField();
-      
+
         ptsJ1.setText(""+Game.getInstance().getLifePlayer1());
         ptsJ2.setText(""+Game.getInstance().getLifePlayer2());
 
@@ -30,11 +30,11 @@ public class PlacarView extends GridPane implements Observer{
         this.add(new Label("Jogador 2:"),0,1);
         this.add(ptsJ2,1,1);
     }
-    
+
     @Override
     public void update(Observable o,Object arg){
         ptsJ1.setText(""+Game.getInstance().getLifePlayer1());
         ptsJ2.setText(""+Game.getInstance().getLifePlayer2());
-    }    
+    }
 }
 

@@ -18,10 +18,10 @@ public class DeckView extends HBox implements CardObserver,Observer{
     public DeckView(int nroJog){
         super(4);
         this.setAlignment(Pos.CENTER);
-        
+
         jogador = nroJog;
         selectedCard = null;
-        
+
         cDeck = null;
         if (jogador == 1){
             cDeck = Game.getInstance().getDeckP1();
@@ -29,21 +29,21 @@ public class DeckView extends HBox implements CardObserver,Observer{
             cDeck = Game.getInstance().getDeckP2();
         }
         cDeck.addObserver(this);
-        
+
         for(Card card:cDeck.getCards()){
             CardView cv = new CardView(card);
             cv.setCardObserver(this);
             this.getChildren().add(cv);
         }
     }
-    
+
     @Override
     public void cardSelected(CardView cv){
         cDeck.setSelectedCard(cv.getCard());
         selectedCard = cv.getCard();
         Game.getInstance().play(cDeck);
     }
-        
+
     private void removeSel(){
         List cards = getChildren();
         for(int i=0;i<cards.size();i++){
@@ -52,9 +52,9 @@ public class DeckView extends HBox implements CardObserver,Observer{
                 getChildren().remove(cv);
                 selectedCard = null;
             }
-        }      
+        }
     }
-    
+
     @Override
     public void update(Observable o,Object arg){
         if (arg == null){

@@ -16,7 +16,7 @@ import pucrs.ep.poo.cartas.modelo.Game;
 
 
 public class GameWindow extends Application implements Observer{
-   
+
     public static void main(String[] args) {
         launch(args);
     }
@@ -24,7 +24,7 @@ public class GameWindow extends Application implements Observer{
     @Override
     public void start(Stage primaryStage) {
         Game.getInstance().addObserver(this);
-        
+
         primaryStage.setTitle("Batalha de Cartas");
 
         GridPane grid = new GridPane();
@@ -32,16 +32,16 @@ public class GameWindow extends Application implements Observer{
         grid.setHgap(10);
         grid.setVgap(10);
         grid.setPadding(new Insets(25, 25, 25, 25));
-       
+
         DeckView deckJ1 = new DeckView(1);
         ScrollPane sd1 = new ScrollPane();
         sd1.setPrefSize(950, 320);
         sd1.setContent(deckJ1);
         grid.add(sd1,0,0);
-        
+
         PlacarView placar = new PlacarView();
         grid.add(placar,0,1);
-        
+
         Button butClean = new Button("Clean");
         grid.add(butClean,1,1);
         butClean.setOnAction(new EventHandler<ActionEvent>() {
@@ -56,16 +56,16 @@ public class GameWindow extends Application implements Observer{
         sd2.setPrefSize(950, 320);
         sd2.setContent(deckJ2);
         grid.add(sd2,0,2);
-                
+
         Scene scene = new Scene(grid);
-        primaryStage.setScene(scene);        
+        primaryStage.setScene(scene);
         primaryStage.show();
     }
 
     @Override
     public void update(Observable o,Object arg){
         Alert alert;
-        
+
         if (arg == null){
             return;
         }
@@ -86,9 +86,9 @@ public class GameWindow extends Application implements Observer{
                     alert.setHeaderText(null);
                     alert.setContentText("Fim de Jogo!!");
                     alert.showAndWait();
-                    break;                    
+                    break;
             }
         }
     }
-    
+
 }
