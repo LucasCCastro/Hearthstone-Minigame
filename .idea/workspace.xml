@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2237e684-1796-42da-988b-22971b6f74c1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Cinco.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Dez.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Dois.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Nove.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Oito.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Quatro.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Seis.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Sete.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Tres.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Um.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/mapa_restaurante.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/ImageFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/ImageFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/GameWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/ImageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/ImageFactory.java" afterDir="false" />
-    </list>
+    <list default="true" id="2237e684-1796-42da-988b-22971b6f74c1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +71,7 @@
       <updated>1574622021262</updated>
       <workItem from="1574622022606" duration="3839000" />
       <workItem from="1575148385115" duration="6462000" />
-      <workItem from="1575218306076" duration="1750000" />
+      <workItem from="1575218306076" duration="2024000" />
     </task>
     <task id="LOCAL-00001" summary="Layout Organized">
       <created>1575218763959</created>
@@ -99,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575218763959</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Card Images Package Included">
+      <created>1575220333523</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575220333523</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +108,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Layout Organized" />
-    <option name="LAST_COMMIT_MESSAGE" value="Layout Organized" />
+    <MESSAGE value="Card Images Package Included" />
+    <option name="LAST_COMMIT_MESSAGE" value="Card Images Package Included" />
   </component>
 </project>
