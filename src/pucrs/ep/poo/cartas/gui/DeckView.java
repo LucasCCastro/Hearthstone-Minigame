@@ -10,20 +10,19 @@ import pucrs.ep.poo.cartas.modelo.CardObserver;
 import pucrs.ep.poo.cartas.modelo.*;
 
 public class DeckView extends HBox implements CardObserver,Observer{
-    private int jogador;
+    private boolean jogador;
     private CardDeck cDeck;
     private Card selectedCard;
 
 
-    public DeckView(int nroJog){
+    public DeckView(boolean nroJog){
         super(4);
-        this.setAlignment(Pos.CENTER);
-
+        this.setAlignment(Pos.TOP_RIGHT);
         jogador = nroJog;
         selectedCard = null;
 
         cDeck = null;
-        if (jogador == 1){
+        if (jogador){
             cDeck = Game.getInstance().getDeckP1();
         }else{
             cDeck = Game.getInstance().getDeckP2();

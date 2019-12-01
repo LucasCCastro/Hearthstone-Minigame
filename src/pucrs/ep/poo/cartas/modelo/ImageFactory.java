@@ -18,7 +18,7 @@ public class ImageFactory{
 
     private String id2File(String imgId){
 
-        return("file:./images/Um.png");
+        return("file:./images/teste.png");
 
     }
 

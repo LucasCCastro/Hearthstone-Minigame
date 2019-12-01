@@ -1,5 +1,6 @@
 package pucrs.ep.poo.cartas.gui;
 
+import java.awt.*;
 import java.util.*;
 import javafx.application.Application;
 import javafx.geometry.Insets;
@@ -33,31 +34,62 @@ public class GameWindow extends Application implements Observer{
         grid.setVgap(10);
         grid.setPadding(new Insets(25, 25, 25, 25));
 
-        DeckView deckJ1 = new DeckView(1);
+        DeckView deckJ1 = new DeckView(true);
         ScrollPane sd1 = new ScrollPane();
-        sd1.setPrefSize(950, 320);
+        sd1.setPrefSize(1700, 275);
         sd1.setContent(deckJ1);
         grid.add(sd1,0,0);
 
-        PlacarView placar = new PlacarView();
-        grid.add(placar,0,1);
-
-        Button butClean = new Button("Clean");
-        grid.add(butClean,1,1);
-        butClean.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent e) {
-                //algo
-            }
-        });
-
-        DeckView deckJ2 = new DeckView(2);
+        DeckView deckJ2 = new DeckView(true);
         ScrollPane sd2 = new ScrollPane();
-        sd2.setPrefSize(950, 320);
+        sd2.setPrefSize(1700, 275);
         sd2.setContent(deckJ2);
-        grid.add(sd2,0,2);
+        grid.add(sd2,0,1);
 
-        Scene scene = new Scene(grid);
+        DeckView deckJ3 = new DeckView(false);
+        ScrollPane sd3 = new ScrollPane();
+        sd3.setPrefSize(1700, 275);
+        sd3.setContent(deckJ3);
+        grid.add(sd3,0,6);
+
+        DeckView deckJ4 = new DeckView(false);
+        ScrollPane sd4 = new ScrollPane();
+        sd4.setPrefSize(1700, 275);
+        sd4.setContent(deckJ4);
+        grid.add(sd4,0,7);
+
+        PlacarView placar = new PlacarView();
+        grid.add(placar,0,4);
+
+//        Button endTurn = new Button("End turn");
+//        grid.add(endTurn,3,4);
+//        endTurn.setOnAction(new EventHandler<ActionEvent>() {
+//            @Override
+//            public void handle(ActionEvent e) {
+//                //algo
+//            }
+//        });
+//
+//        Button attackMinion = new Button("Attack Minion");
+//        grid.add(attackMinion,3,5);
+//        attackMinion.setOnAction(new EventHandler<ActionEvent>() {
+//            @Override
+//            public void handle(ActionEvent e) {
+//                //algo
+//            }
+//        });
+//
+//        Button attackFace = new Button("Attack Face");
+//        grid.add(attackFace,3,3);
+//        attackFace.setOnAction(new EventHandler<ActionEvent>() {
+//            @Override
+//            public void handle(ActionEvent e) {
+//                //algo
+//            }
+//        });
+
+
+        Scene scene = new Scene(grid, 1080, 720);
         primaryStage.setScene(scene);
         primaryStage.show();
     }

@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c993c9fc-7207-442c-90bc-b9b0a4775a76" name="Default Changelist" comment="">
+    <list default="true" id="2237e684-1796-42da-988b-22971b6f74c1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hearthstone-Minigame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hearthstone-Minigame.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/DeckView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/DeckView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameWindow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameWindow$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/PlacarView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/PlacarView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/TableView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/TableView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/ImageFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/ImageFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/table.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/table.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/DeckView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/DeckView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/GameWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/PlacarView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/PlacarView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/TableView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/TableView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/ImageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/ImageFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Table.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,14 +29,21 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1ToBMDIudIz3LclQg832UXiawp8" />
+  <component name="ProjectId" id="1U4hxbnP6gyLhJF9uTvGeEWNVzS" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib/javafx.web.jar!/" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -62,12 +85,14 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c993c9fc-7207-442c-90bc-b9b0a4775a76" name="Default Changelist" comment="" />
-      <created>1574116517787</created>
+      <changelist id="2237e684-1796-42da-988b-22971b6f74c1" name="Default Changelist" comment="" />
+      <created>1574622021262</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1574116517787</updated>
-      <workItem from="1574116519063" duration="270000" />
+      <updated>1574622021262</updated>
+      <workItem from="1574622022606" duration="3839000" />
+      <workItem from="1575148385115" duration="6462000" />
+      <workItem from="1575218306076" duration="259000" />
     </task>
     <servers />
   </component>
@@ -79,7 +104,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

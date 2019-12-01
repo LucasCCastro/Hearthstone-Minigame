@@ -11,7 +11,7 @@ public class Game extends Observable{
     private int lifePlayer1, lifePlayer2;
     private int manaPlayer1, manaPlayer2;
     private CardDeck deckP1, deckP2, playDeck, opponentDeck;
-    private table tableP1, tableP2, playTable, opponentTable;
+    private Table tableP1, tableP2, playTable, opponentTable;
     private boolean player; //P1 = true//P2 = false//
     private CardsInitializer cardsInitializer = new CardsInitializer();
 
@@ -29,19 +29,22 @@ public class Game extends Observable{
         this.deckP2 = new CardDeck();
         this.playDeck = new CardDeck();
         this.opponentDeck = new CardDeck();
-        this.tableP1 = new table();
-        this.tableP2 = new table();
-        this.playTable = new table();
-        this.opponentTable = new table();
-        this.player = true;
+        this.tableP1 = new Table();
+        this.tableP2 = new Table();
+        this.playTable = new Table();
+        this.opponentTable = new Table();
+
+        play(this.deckP1);
     }
 
-    private void nextPlayer(){
+    public void nextPlayer(){
         if(this.player){
             this.player = false;
+            play(this.deckP2);
         }
         else {
             this.player = true;
+            play(this.deckP1);
         }
     }
 
@@ -69,6 +72,19 @@ public class Game extends Observable{
         return this.deckP2;
     }
 
+    public Table getTableP1() {
+        return tableP1;
+    }
+
+    public Table getTableP2() {
+        return tableP2;
+    }
+
+    public void setPlayTable(Table playTable) {
+        this.playTable = playTable;
+    }
+
+
     public void play(CardDeck deckAcionado){
         GameEvent gameEvent = null;
 
@@ -86,6 +102,7 @@ public class Game extends Observable{
                 if(this.manaPlayer1 < 10) {this.manaPlayer1++;}
                 //
                 //
+                System.out.println("player 1 jogando");
                 //All P1 possible actions will be here
                 //
                 //
@@ -110,6 +127,7 @@ public class Game extends Observable{
                 if(this.manaPlayer2 < 10){this.manaPlayer2++;}
                 //
                 //
+                System.out.println("player 2 jogando");
                 //All P2 possible actions will be here
                 //
                 //
