@@ -12,6 +12,7 @@ public class Spell extends Card {
         super(anId, anImageId, cost);
         this.type = aType;
         this.value = aValue;
+
     }
 
     public SpellType getType() {

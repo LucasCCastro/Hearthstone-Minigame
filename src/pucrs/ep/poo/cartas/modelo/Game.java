@@ -9,22 +9,23 @@ import java.util.*;
 public class Game extends Observable{
     private static Game game = new Game();
     private int lifePlayer1, lifePlayer2;
-    private int manaPlayer1, manaPlayer2;
+    private int manaPlayer1, manaPlayer2, playMana;
     private CardDeck deckP1, deckP2, playDeck, opponentDeck;
     private Table tableP1, tableP2, playTable, opponentTable;
     private boolean player; //P1 = true//P2 = false//
-    private CardsInitializer cardsInitializer = new CardsInitializer();
+    private CardsInitializer cardsInitializer;
 
     public static Game getInstance(){
         return(game);
     }
 
     private Game(){
-        this.cardsInitializer.initializeCards();
+        this.cardsInitializer = new CardsInitializer();
         this.lifePlayer1 = 30;
         this.lifePlayer2 = 30;
-        this.manaPlayer1 = 1;
-        this.manaPlayer2 = 1;
+        this.manaPlayer1 = 0;
+        this.manaPlayer2 = 0;
+        this.playMana = 0;
         this.deckP1 = new CardDeck();
         this.deckP2 = new CardDeck();
         this.playDeck = new CardDeck();
@@ -64,6 +65,13 @@ public class Game extends Observable{
     public int getManaPlayer2() { return this.manaPlayer2; }
     public void setManaPlayer2(int value) { this.manaPlayer2 = manaPlayer2; }
 
+    public int getPlayMana() {
+        return playMana;
+    }
+    public void setPlayMana(int playMana) {
+        this.playMana = playMana;
+    }
+
     public CardDeck getDeckP1() {
         return this.deckP1;
     }
@@ -100,9 +108,10 @@ public class Game extends Observable{
                 this.opponentTable = tableP2;
                 this.opponentDeck.createOpponentHand(deckP2.getNumberOfCards());
                 if(this.manaPlayer1 < 10) {this.manaPlayer1++;}
+                this.playMana = this.manaPlayer1;
                 //
                 //
-                System.out.println("player 1 jogando");
+                System.out.println("player1 turn");
                 //All P1 possible actions will be here
                 //
                 //
@@ -111,7 +120,7 @@ public class Game extends Observable{
                     //The actions in case P1 wins will be here
                     //
                 }
-                nextPlayer();
+                //nextPlayer();
             }
         }else if (deckAcionado == deckP2){
             if (this.player){
@@ -125,9 +134,10 @@ public class Game extends Observable{
                 this.opponentTable = tableP1;
                 this.opponentDeck.createOpponentHand(deckP1.getNumberOfCards());
                 if(this.manaPlayer2 < 10){this.manaPlayer2++;}
+                this.playMana = this.manaPlayer2;
                 //
                 //
-                System.out.println("player 2 jogando");
+                System.out.println("player2 turn");
                 //All P2 possible actions will be here
                 //
                 //
@@ -136,7 +146,7 @@ public class Game extends Observable{
                     //The actions in case P2 wins will be here
                     //
                 }
-                nextPlayer();
+                //nextPlayer();
             }
         }
     }

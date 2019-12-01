@@ -7,15 +7,22 @@ import java.util.Observable;
 
 public class Table extends Observable{
 
-    public static final int MAXIMUMSIZE = 7;
+    public static final int MAXIMUMSIZE = 11;
     private List<Card> tableCards;
     private Card selected;
 
-    public Table(){
 
+    public Table() {
+        CardsInitializer initializer = new CardsInitializer();
         tableCards = new ArrayList<>();
         selected = null;
+
+        for (int i = 0; i < MAXIMUMSIZE; i++) {
+            tableCards.add(initializer.returnARandomCard());
+        }
+
     }
+
 
     public List<Card> getTableCards(){
         return(tableCards);

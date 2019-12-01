@@ -14,7 +14,7 @@ public class CardView extends Button implements Observer{
     private CardObserver observer;
 
     public CardView(Card aCard){
-        super("",ImageFactory.getInstance().createImage("imgBck"));
+        super("",ImageFactory.getInstance().createImage(aCard.getImageId()));
         card = aCard;
         card.addObserver(this);
         thisCard = this;
@@ -34,7 +34,7 @@ public class CardView extends Button implements Observer{
         if (card.isFacedUp()){
             this.setGraphic(ImageFactory.getInstance().createImage(card.getImageId()));
         }else{
-            this.setGraphic(ImageFactory.getInstance().createImage("imgBck"));
+            this.setGraphic(ImageFactory.getInstance().createImage(card.getImageId()));
         }
     }
 

@@ -13,7 +13,7 @@ import javafx.scene.layout.GridPane;
 import pucrs.ep.poo.cartas.modelo.Game;
 
 public class PlacarView extends GridPane implements Observer{
-    private TextField ptsJ1,ptsJ2;
+    private TextField ptsJ1,ptsJ2,mana;
 
     public PlacarView(){
         this.setAlignment(Pos.CENTER);
@@ -25,14 +25,18 @@ public class PlacarView extends GridPane implements Observer{
 
         ptsJ1 = new TextField();
         ptsJ2 = new TextField();
+        mana = new TextField();
 
         ptsJ1.setText(""+Game.getInstance().getLifePlayer1());
         ptsJ2.setText(""+Game.getInstance().getLifePlayer2());
+        mana.setText(""+Game.getInstance().getPlayMana());
 
         this.add(new Label("Player 1 Life:"),3,0);
         this.add(ptsJ1,4,0);
         this.add(new Label("Player 2 Life:"),3,1);
         this.add(ptsJ2,4,1);
+        this.add(new Label("Mana:"),8,0);
+        this.add(mana,9,0);
 
         Button endTurn = new Button("End turn");
         this.add(endTurn,8,1);
@@ -69,6 +73,8 @@ public class PlacarView extends GridPane implements Observer{
     public void update(Observable o,Object arg){
         ptsJ1.setText(""+Game.getInstance().getLifePlayer1());
         ptsJ2.setText(""+Game.getInstance().getLifePlayer2());
+        mana.setText(""+Game.getInstance().getPlayMana());
+
     }
 }
 

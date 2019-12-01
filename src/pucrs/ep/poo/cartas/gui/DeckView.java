@@ -40,7 +40,7 @@ public class DeckView extends HBox implements CardObserver,Observer{
     public void cardSelected(CardView cv){
         cDeck.setSelectedCard(cv.getCard());
         selectedCard = cv.getCard();
-        Game.getInstance().play(cDeck);
+       // Game.getInstance().play(cDeck);
     }
 
     private void removeSel(){
