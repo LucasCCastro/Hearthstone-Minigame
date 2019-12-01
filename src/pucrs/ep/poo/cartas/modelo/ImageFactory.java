@@ -18,7 +18,7 @@ public class ImageFactory{
 
     private String id2File(String imgId){
 
-        return("file:./images/teste.png");
+        return("file:./images/one.png");
 
     }
 
@@ -29,8 +29,12 @@ public class ImageFactory{
             images.put(imgId,img);
         }
 
+        ImageView imgView = new ImageView(img);
+        imgView.setFitWidth(128);
+        imgView.setFitHeight(193.5);
+       // imgView.setPreserveRatio(true);
         //Image img = new Image(id2File(imgId));
-        return(new ImageView(img));
+        return imgView;
     }
 }
 

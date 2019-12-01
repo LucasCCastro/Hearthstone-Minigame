@@ -2,26 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2237e684-1796-42da-988b-22971b6f74c1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hearthstone-Minigame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hearthstone-Minigame.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/DeckView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/DeckView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Cinco.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Dez.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Dois.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Nove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Oito.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Quatro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Seis.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Sete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Tres.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Um.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/mapa_restaurante.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameWindow$2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/PlacarView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/PlacarView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/TableView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/TableView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/ImageFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/ImageFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/table.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/table.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/DeckView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/DeckView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/GameWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/PlacarView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/PlacarView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/TableView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/TableView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/ImageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/ImageFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Table.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,8 +90,16 @@
       <updated>1574622021262</updated>
       <workItem from="1574622022606" duration="3839000" />
       <workItem from="1575148385115" duration="6462000" />
-      <workItem from="1575218306076" duration="259000" />
+      <workItem from="1575218306076" duration="1750000" />
     </task>
+    <task id="LOCAL-00001" summary="Layout Organized">
+      <created>1575218763959</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575218763959</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,5 +117,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Layout Organized" />
+    <option name="LAST_COMMIT_MESSAGE" value="Layout Organized" />
   </component>
 </project>

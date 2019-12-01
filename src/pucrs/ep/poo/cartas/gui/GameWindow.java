@@ -36,25 +36,26 @@ public class GameWindow extends Application implements Observer{
 
         DeckView deckJ1 = new DeckView(true);
         ScrollPane sd1 = new ScrollPane();
-        sd1.setPrefSize(1700, 275);
+        sd1.setPrefSize(1000, 290);
         sd1.setContent(deckJ1);
         grid.add(sd1,0,0);
 
+
         DeckView deckJ2 = new DeckView(true);
         ScrollPane sd2 = new ScrollPane();
-        sd2.setPrefSize(1700, 275);
+        sd2.setPrefSize(1700, 290);
         sd2.setContent(deckJ2);
         grid.add(sd2,0,1);
 
         DeckView deckJ3 = new DeckView(false);
         ScrollPane sd3 = new ScrollPane();
-        sd3.setPrefSize(1700, 275);
+        sd3.setPrefSize(1700, 290);
         sd3.setContent(deckJ3);
         grid.add(sd3,0,6);
 
         DeckView deckJ4 = new DeckView(false);
         ScrollPane sd4 = new ScrollPane();
-        sd4.setPrefSize(1700, 275);
+        sd4.setPrefSize(1700, 290);
         sd4.setContent(deckJ4);
         grid.add(sd4,0,7);
 
