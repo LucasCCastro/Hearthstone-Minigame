@@ -46,7 +46,7 @@ public class DeckView extends HBox implements CardObserver, Observer {
         boolean player = Game.getInstance().isPlayer();
 
         if (player) {
-            if (Game.getInstance().getManaPlayer1() >= selectedCard.getValue()) {
+            if (Game.getInstance().getManaPlayer1() >= Game.getInstance().getDeckP1().getSelectedCard().getValue()) {
                 List cards = getChildren();
                 for (int i = 0; i < cards.size(); i++) {
                     CardView cv = (CardView) cards.get(i);
@@ -58,7 +58,7 @@ public class DeckView extends HBox implements CardObserver, Observer {
                 }
             }
             } else if (!player) {
-                if (Game.getInstance().getManaPlayer2() >= selectedCard.getValue()) {
+                if (Game.getInstance().getManaPlayer2() >= Game.getInstance().getDeckP2().getSelectedCard().getValue()) {
                     List cards = getChildren();
                     for (int i = 0; i < cards.size(); i++) {
                         CardView cv = (CardView) cards.get(i);

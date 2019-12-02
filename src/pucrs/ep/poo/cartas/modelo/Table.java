@@ -34,17 +34,18 @@ public class Table extends Observable{
         return(tableCards.size());
     }
 
-    public boolean addCardToTheTable(Card aCard) {
-        if(aCard==null) return false;
+    public void addCardToTheTable(Card aCard) {
+
 
         if(tableCards.size() < MAXIMUMSIZE) {
             tableCards.add(aCard);
+            selected = aCard;
             GameEvent event = new GameEvent(GameEvent.Target.TABLE,GameEvent.Action.ADDINGTOTABLE,"");
             setChanged();
             notifyObservers(event);
-            return true;
+            selected = null;
         }
-        return false;
+
     }
 
     public boolean removeCardFromTable(Card aCard) {

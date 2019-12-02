@@ -24,7 +24,7 @@ public class CardsInitializer {
         Card c5 = new Minion("5","img5",5,7,4); this.allCards.add(c5);
         Card c6 = new Minion("6","img6",2,2,2); this.allCards.add(c6);
         Card c7 = new Minion("7","img7",4,4,4); this.allCards.add(c7);
-        Card c8 = new Spell("8","img8",1, Spell.SpellType.damage,2); this.allCards.add(c8);
+        Card c8 = new Spell("8","img8",1, Spell.SpellType.damage,1); this.allCards.add(c8);
         Card c9 = new Spell("9","img9",7, Spell.SpellType.healing,5); this.allCards.add(c9);
         Card c10 = new Minion("10","img10",3,3,3); this.allCards.add(c10);
     }

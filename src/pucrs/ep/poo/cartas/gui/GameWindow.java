@@ -12,9 +12,12 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.event.*;
+import javafx.stage.StageStyle;
 import pucrs.ep.poo.cartas.modelo.Game;
+import javafx.scene.image.Image ;
 
 
 public class GameWindow extends Application implements Observer {
@@ -63,36 +66,18 @@ public class GameWindow extends Application implements Observer {
         PlacarView placar = new PlacarView();
         grid.add(placar, 0, 4);
 
-//        Button endTurn = new Button("End turn");
-//        grid.add(endTurn,3,4);
-//        endTurn.setOnAction(new EventHandler<ActionEvent>() {
-//            @Override
-//            public void handle(ActionEvent e) {
-//                //algo
-//            }
-//        });
-//
-//        Button attackMinion = new Button("Attack Minion");
-//        grid.add(attackMinion,3,5);
-//        attackMinion.setOnAction(new EventHandler<ActionEvent>() {
-//            @Override
-//            public void handle(ActionEvent e) {
-//                //algo
-//            }
-//        });
-//
-//        Button attackFace = new Button("Attack Face");
-//        grid.add(attackFace,3,3);
-//        attackFace.setOnAction(new EventHandler<ActionEvent>() {
-//            @Override
-//            public void handle(ActionEvent e) {
-//                //algo
-//            }
-//        });
-
-
         Scene scene = new Scene(grid, 1080, 720);
         primaryStage.setScene(scene);
+        //primary stage was here
+
+//        BackgroundImage myBI= new BackgroundImage(new Image("File:images/board.jpg"),
+//                BackgroundRepeat.REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT,
+//                BackgroundSize.DEFAULT);
+//
+//        grid.setBackground(new Background(myBI));
+//        scene.setFill(Color.TRANSPARENT);
+//        sd4.setStyle("-fx-background-color: rgba(0, 100, 100, 0.5); -fx-background-radius: 10;");
+
         primaryStage.show();
     }
 

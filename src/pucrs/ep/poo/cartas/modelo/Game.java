@@ -125,13 +125,15 @@ public class Game extends Observable {
             } else {
 
                 this.deckP1.buyACard();
-                if(this.playMana < 10) {
+                if (this.playMana < 10) {
                     playMana++;
                 }
-                    this.manaPlayer1 = playMana;
+                this.manaPlayer1 = playMana;
                 gameEvent = new GameEvent(GameEvent.Target.TABLE, GameEvent.Action.NEWROUND, "");
+                GameEvent event = new GameEvent(GameEvent.Target.TABLE,GameEvent.Action.ADDINGTOTABLE,"");
                 setChanged();
                 notifyObservers(gameEvent);
+                notifyObservers(event);
                 //
                 //
                 System.out.println("player1 turn");
@@ -155,8 +157,10 @@ public class Game extends Observable {
                 this.manaPlayer2 = playMana;
 
                 gameEvent = new GameEvent(GameEvent.Target.TABLE, GameEvent.Action.NEWROUND, "");
+                GameEvent anEvent = new GameEvent(GameEvent.Target.TABLE,GameEvent.Action.ADDINGTOTABLE,"");
                 setChanged();
                 notifyObservers(gameEvent);
+                notifyObservers(anEvent);
                 //
                 //
                 System.out.println("player2 turn");
@@ -175,13 +179,21 @@ public class Game extends Observable {
 
     public void removeSelected() {
         GameEvent gameEvent = null;
-        if(player){
-            addCardToTheTable(deckP1.getSelectedCard());
-            deckP1.removeSel();
+        if (player) {
+            if(deckP1.getSelectedCard()!=null) {
+                if(manaPlayer1 >= deckP1.getSelectedCard().getValue()) {
+                    addCardToTheTable(deckP1.getSelectedCard());
+                    deckP1.removeSel();
+                }
+            }
 
         } else {
-            addCardToTheTable(deckP2.getSelectedCard());
-            deckP2.removeSel();
+            if (deckP2.getSelectedCard() != null) {
+                if(manaPlayer2 >= deckP2.getSelectedCard().getValue()) {
+                    addCardToTheTable(deckP2.getSelectedCard());
+                    deckP2.removeSel();
+                }
+            }
         }
 
         gameEvent = new GameEvent(GameEvent.Target.DECK, GameEvent.Action.REMOVINGFROMDECK, "");
@@ -189,13 +201,14 @@ public class Game extends Observable {
         notifyObservers(gameEvent);
     }
 
-public void addCardToTheTable(Card aCard) {
-        if(player) {
+    public void addCardToTheTable(Card aCard) {
+        if (player) {
             tableP1.addCardToTheTable(aCard);
         } else {
             tableP2.addCardToTheTable(aCard);
         }
-}
+    }
+
 
 
 

@@ -49,13 +49,10 @@ public class CardDeck extends Observable {
             return;
         }
         deck.remove(selected);
-        Game.getInstance().addCardToTheTable(selected);
-        selected = null;
-        GameEvent gameEvent1 = new GameEvent(GameEvent.Target.DECK, GameEvent.Action.REMOVESEL, "");
-        GameEvent gameEvent2 = new GameEvent(GameEvent.Target.TABLE, GameEvent.Action.ADDINGTOTABLE, "");
+        GameEvent gameEvent = new GameEvent(GameEvent.Target.DECK, GameEvent.Action.REMOVESEL, "");
         setChanged();
-        notifyObservers(gameEvent1);
-        notifyObservers(gameEvent2);
+        notifyObservers(gameEvent);
+        selected = null;
     }
 
     public void setSelectedCard(Card card) {

@@ -54,12 +54,7 @@ public class PlacarView extends GridPane implements Observer{
 
         Button butClean = new Button("Play Card");
         this.add(butClean,15,1);
-        butClean.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent e) {
-                Game.getInstance().removeSelected();
-            }
-        });
+        butClean.setOnAction(e -> Game.getInstance().removeSelected());
 
 
 //        endTurn.setOnAction(new EventHandler<ActionEvent>() {
@@ -71,11 +66,8 @@ public class PlacarView extends GridPane implements Observer{
 
         Button attackMinion = new Button("Attack Minion");
         this.add(attackMinion,0,0);
-        attackMinion.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent e) {
-                //algo
-            }
+        attackMinion.setOnAction(e -> {
+            //algo
         });
 
         Button attackFace = new Button("Attack Face");
