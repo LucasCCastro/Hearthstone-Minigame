@@ -6,7 +6,7 @@ import pucrs.ep.poo.cartas.modelo.CardDeck;
 
 import java.util.*;
 
-public class Game extends Observable{
+public class Game extends Observable {
     private static Game game = new Game();
     private int lifePlayer1, lifePlayer2;
     private int manaPlayer1, manaPlayer2, playMana;
@@ -15,11 +15,11 @@ public class Game extends Observable{
     private boolean player; //P1 = true//P2 = false//
     private CardsInitializer cardsInitializer;
 
-    public static Game getInstance(){
-        return(game);
+    public static Game getInstance() {
+        return (game);
     }
 
-    private Game(){
+    private Game() {
         this.cardsInitializer = new CardsInitializer();
         this.lifePlayer1 = 30;
         this.lifePlayer2 = 30;
@@ -38,12 +38,11 @@ public class Game extends Observable{
         play(this.deckP1);
     }
 
-    public void nextPlayer(){
-        if(this.player){
+    public void nextPlayer() {
+        if (this.player) {
             this.player = false;
             play(this.deckP2);
-        }
-        else {
+        } else {
             this.player = true;
             play(this.deckP1);
         }
@@ -52,22 +51,44 @@ public class Game extends Observable{
     public int getLifePlayer1() {
         return this.lifePlayer1;
     }
-    public void setLifePlayer1(int value) { this.lifePlayer1 = value; }
+
+    public void setLifePlayer1(int value) {
+        this.lifePlayer1 = value;
+    }
 
     public int getLifePlayer2() {
         return this.lifePlayer2;
     }
-    public void setLifePlayer2(int value) { this.lifePlayer2 = value; }
 
-    public int getManaPlayer1() { return this.manaPlayer1; }
-    public void setManaPlayer1(int value) { this.manaPlayer1 = manaPlayer1; }
+    public void setLifePlayer2(int value) {
+        this.lifePlayer2 = value;
+    }
 
-    public int getManaPlayer2() { return this.manaPlayer2; }
-    public void setManaPlayer2(int value) { this.manaPlayer2 = manaPlayer2; }
+    public int getManaPlayer1() {
+        return this.manaPlayer1;
+    }
+
+    public void setManaPlayer1(int value) {
+        this.manaPlayer1 = value;
+    }
+
+    public int getManaPlayer2() {
+        return this.manaPlayer2;
+    }
+
+    public void setManaPlayer2(int value) {
+        this.manaPlayer2 = value;
+    }
+
+
+    public boolean isPlayer() {
+        return player;
+    }
 
     public int getPlayMana() {
         return playMana;
     }
+
     public void setPlayMana(int playMana) {
         this.playMana = playMana;
     }
@@ -93,62 +114,85 @@ public class Game extends Observable{
     }
 
 
-    public void play(CardDeck deckAcionado){
+    public void play(CardDeck deckAcionado) {
         GameEvent gameEvent = null;
 
-        if (deckAcionado == this.deckP1){
-            if (!this.player){
-                gameEvent = new GameEvent(GameEvent.Target.GWIN,GameEvent.Action.INVPLAY,"2");
+        if (deckAcionado == this.deckP1) {
+            if (!this.player) {
+                gameEvent = new GameEvent(GameEvent.Target.GWIN, GameEvent.Action.INVPLAY, "2");
                 setChanged();
                 notifyObservers(gameEvent);
-            }else{
-                this.deckP1.add(this.cardsInitializer.returnARandomCard());
-                this.playDeck = deckP1;
-                this.playTable = tableP1;
-                this.opponentTable = tableP2;
-                this.opponentDeck.createOpponentHand(deckP2.getNumberOfCards());
-                if(this.manaPlayer1 < 10) {this.manaPlayer1++;}
-                this.playMana = this.manaPlayer1;
+            } else {
+
+                this.deckP1.buyACard();
+                if(this.playMana < 10) {
+                    playMana++;
+                }
+                    this.manaPlayer1 = playMana;
+                gameEvent = new GameEvent(GameEvent.Target.TABLE, GameEvent.Action.NEWROUND, "");
+                setChanged();
+                notifyObservers(gameEvent);
                 //
                 //
                 System.out.println("player1 turn");
                 //All P1 possible actions will be here
                 //
                 //
-                if(this.lifePlayer2 <= 0) {
+                if (this.lifePlayer2 <= 0) {
                     //
                     //The actions in case P1 wins will be here
                     //
                 }
-                //nextPlayer();
+
             }
-        }else if (deckAcionado == deckP2){
-            if (this.player){
-                gameEvent = new GameEvent(GameEvent.Target.GWIN,GameEvent.Action.INVPLAY,"1");
+        } else if (deckAcionado == deckP2) {
+            if (this.player) {
+                gameEvent = new GameEvent(GameEvent.Target.GWIN, GameEvent.Action.INVPLAY, "1");
                 setChanged();
                 notifyObservers(gameEvent);
-            }else{
-                this.deckP2.add(this.cardsInitializer.returnARandomCard());
-                this.playDeck = deckP2;
-                this.playTable = tableP2;
-                this.opponentTable = tableP1;
-                this.opponentDeck.createOpponentHand(deckP1.getNumberOfCards());
-                if(this.manaPlayer2 < 10){this.manaPlayer2++;}
-                this.playMana = this.manaPlayer2;
+            } else {
+                this.deckP2.buyACard();
+                this.manaPlayer2 = playMana;
                 //
                 //
                 System.out.println("player2 turn");
                 //All P2 possible actions will be here
                 //
                 //
-                if(this.lifePlayer1 <= 0) {
+                if (this.lifePlayer1 <= 0) {
                     //
                     //The actions in case P2 wins will be here
                     //
                 }
-                //nextPlayer();
+
             }
         }
     }
+
+    public void removeSelected() {
+        GameEvent gameEvent = null;
+        if(player){
+            addCardToTheTable(deckP1.getSelectedCard());
+            deckP1.removeSel();
+
+        } else {
+            addCardToTheTable(deckP2.getSelectedCard());
+            deckP2.removeSel();
+        }
+
+        gameEvent = new GameEvent(GameEvent.Target.DECK, GameEvent.Action.REMOVINGFROMDECK, "");
+        setChanged();
+        notifyObservers(gameEvent);
+    }
+
+public void addCardToTheTable(Card aCard) {
+        if(player) {
+            tableP1.addCardToTheTable(aCard);
+        } else {
+            tableP2.addCardToTheTable(aCard);
+        }
+}
+
+
 
 }

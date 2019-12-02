@@ -2,317 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2237e684-1796-42da-988b-22971b6f74c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/images/desktop.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/eight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/five.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/four.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/nine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/seven.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/six.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ten.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/three.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/two.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ART_BOT_Bundle_001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/AT_020.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/AT_036t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/AT_037a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/AT_037t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/AT_055.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/AT_099t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/AT_101.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/AT_102.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/AT_132_SHAMANb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BOT_066t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BOT_309.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BOT_312t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BOT_445t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BOT_537t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BRMA06_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BRMA06_4H.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BRMA09_2Ht.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BRMA09_2t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BRMA09_4Ht.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BRMA09_4t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BRMA09_5Ht.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BRMA09_5t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BRMA10_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BRMA10_5H.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BRMA17_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BRMA17_6H.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BRM_004t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BRM_006t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BRM_010t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BRM_010t2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BRM_022t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/BRM_030t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_310t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_315t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_316t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_337t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_606t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_621_m2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_621_m3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_621_m4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_621_m5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_621t16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_621t2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_621t25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_648t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_665.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t09.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CFM_712_t30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CS1_130.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CS2_007.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CS2_008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CS2_029.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CS2_050.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CS2_089.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CS2_101t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CS2_118.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CS2_119.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CS2_120.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CS2_152.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CS2_168.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CS2_172.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CS2_182.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CS2_186.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CS2_200.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CS2_201.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CS2_231.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CS2_boar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/CS2_tk1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/DREAM_03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/DS1_185.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/EX1_025t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/EX1_110t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/EX1_116t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/EX1_130a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/EX1_131t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/EX1_158t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/EX1_160t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/EX1_166a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/EX1_279.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/EX1_506a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/EX1_534t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/EX1_554t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/EX1_598.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/EX1_614t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/EX1_finkle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/EX1_tk28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/EX1_tk29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/EX1_tk34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/EX1_tk9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/FB_Champs_EX1_tk9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/FB_Champs_NEW1_008b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/FB_Champs_skele21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/FP1_002t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/FP1_007t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/FP1_014t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/FP1_019t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GILA_500p2t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GILA_817t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GILA_818t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GILA_854t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GILA_BOSS_55t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GIL_190t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GIL_191t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GIL_508t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GIL_553t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GIL_577t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GIL_616t2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GIL_663t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GIL_682t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GVG_015.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GVG_044.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GVG_045t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GVG_064.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GVG_070.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GVG_071.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GVG_080t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GVG_092t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ICCA01_008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ICCA04_004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ICCA05_003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ICCA08_002t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ICCA08_033.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ICC_019t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ICC_023.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ICC_025t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ICC_026t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ICC_085t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ICC_800h3t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ICC_829t2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ICC_829t3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ICC_829t4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ICC_829t5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ICC_900t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/KARA_00_02a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/KARA_13_03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/KAR_005a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/KAR_010a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/KAR_025a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/KAR_025b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/KAR_025c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/KAR_030.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/KAR_044a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/KAR_300.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/KAR_A02_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/KAR_A02_01H.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOEA04_23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOEA04_23h.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOEA04_24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOEA04_24h.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOEA06_02t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOEA06_02th.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOEA07_09.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOEA07_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOEA07_14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOEA07_18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOEA07_25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOEA07_28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOEA09_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOEA09_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOEA09_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOEA09_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOEA09_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOEA09_5H.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOEA10_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOEA16_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOEA16_5t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOE_002t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOE_089t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOE_089t2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOE_089t3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOOTA_BOSS_18t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOOTA_BOSS_48t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOOTA_BOSS_49t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOOT_026t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOOT_069t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOOT_077t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOOT_150t1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOOT_153t1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOOT_203t4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOOT_209t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOOT_233t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOOT_258.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOOT_285t3t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOOT_415t1t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOOT_415t2t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOOT_415t3t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOOT_415t4t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOOT_415t5t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/LOOT_535t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/NAX11_03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/NAX13_04H.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/NAX13_05H.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/NAX1_03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/NAX1h_03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/NAX4_03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/NAX4_03H.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/NEW1_008b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/NEW1_026t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/OG_006a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/OG_031a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/OG_044b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/OG_061t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/OG_080f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/OG_114a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/OG_141.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/OG_142.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/OG_173a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/OG_195c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/OG_202c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/OG_216a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/OG_241a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/OG_248.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/OG_249a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/OG_270a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/OG_272t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/OG_314b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/OG_325.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/OG_326.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/PRO_001at.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TB_008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TB_015.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TB_FireFestival_Brazier.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TB_FireFestival_Fireworks.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TB_KaraPortals_003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TB_LevelUp_002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TB_Noblegarden_002t1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TB_Noblegarden_002t2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TB_SPT_DPromoSpell1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TB_VoidSingularityMinion.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TOT_109t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TOT_303t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TU4a_002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TU4a_003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TU4a_004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TU4a_005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TU4c_002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TU4c_008.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TU4d_002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TU4e_002t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TU4f_002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TU4f_003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/TU4f_005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/UNG_027t4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/UNG_057t1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/UNG_076t1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/UNG_083t1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/UNG_201t.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/UNG_211aa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/UNG_806.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/UNG_809t1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/UNG_829t3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/UNG_834t1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/UNG_914t1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/UNG_999t2t1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/_Back.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/_BackMini.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ds1_whelptoken.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/icones_area-curso.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/skele21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/teste.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/tt_010a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/CardView$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/CardView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/CardView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/DeckView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/DeckView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameEvent$Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameEvent$Action.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameEvent$Target.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameEvent$Target.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/PlacarView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/PlacarView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/TableView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/TableView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/CardDeck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/CardDeck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/CardsInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/CardsInitializer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/ImageFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/ImageFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/Spell$SpellType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/Spell$SpellType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/Spell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/Spell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/table.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/table.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/CardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/CardView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/DeckView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/DeckView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/GameWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/GameEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/GameEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/PlacarView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/PlacarView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/TableView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/TableView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/CardDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/CardDeck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/CardsInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/CardsInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/ImageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/ImageFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Spell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Spell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Table.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -385,7 +102,8 @@
       <updated>1574622021262</updated>
       <workItem from="1574622022606" duration="3839000" />
       <workItem from="1575148385115" duration="6462000" />
-      <workItem from="1575218306076" duration="10118000" />
+      <workItem from="1575218306076" duration="21751000" />
+      <workItem from="1575243181738" duration="2220000" />
     </task>
     <task id="LOCAL-00001" summary="Layout Organized">
       <created>1575218763959</created>
@@ -408,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575220498793</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Card Object Withdraw and Layout fixed">
+      <created>1575230877413</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575230877413</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,6 +156,7 @@
     <MESSAGE value="Layout Organized" />
     <MESSAGE value="Card Images Package Included" />
     <MESSAGE value="Card Images Package Included v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Card Images Package Included v2" />
+    <MESSAGE value="Card Object Withdraw and Layout fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Card Object Withdraw and Layout fixed" />
   </component>
 </project>

@@ -39,8 +39,17 @@ public class PlacarView extends GridPane implements Observer{
         this.add(mana,9,0);
 
         Button endTurn = new Button("End turn");
-        this.add(endTurn,8,1);
+        this.add(endTurn,9,1);
         endTurn.setOnAction(e -> Game.getInstance().nextPlayer());
+
+        Button butClean = new Button("Play Card");
+        this.add(butClean,8,1);
+        butClean.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent e) {
+                Game.getInstance().removeSelected();
+            }
+        });
 
 
 //        endTurn.setOnAction(new EventHandler<ActionEvent>() {
@@ -73,8 +82,11 @@ public class PlacarView extends GridPane implements Observer{
     public void update(Observable o,Object arg){
         ptsJ1.setText(""+Game.getInstance().getLifePlayer1());
         ptsJ2.setText(""+Game.getInstance().getLifePlayer2());
-        mana.setText(""+Game.getInstance().getPlayMana());
-
+        if(Game.getInstance().isPlayer()) {
+            mana.setText(""+Game.getInstance().getManaPlayer1());
+        } else {
+            mana.setText(""+Game.getInstance().getManaPlayer2());
+        }
     }
 }
 

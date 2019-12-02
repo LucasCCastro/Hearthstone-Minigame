@@ -9,15 +9,18 @@ import java.util.*;
 
 // Esta classe tem de ser um container de cartas observavel ...
 public class CardDeck extends Observable {
-    public static final int INITIALCARDS = 11;
+    public static final int INITIALCARDS = 5;
     public static final int MAXIMUMSIZE = 11;
     private List<Card> deck;
     private Card selected;
+    private Card boughtCard;
+    CardsInitializer initializer;
 
     public CardDeck() {
-        CardsInitializer initializer = new CardsInitializer();
+        initializer = new CardsInitializer();
         deck = new ArrayList<>();
         selected = null;
+        boughtCard = null;
 
         for (int i = 0; i < INITIALCARDS; i++) {
             deck.add(initializer.returnARandomCard());
@@ -46,10 +49,13 @@ public class CardDeck extends Observable {
             return;
         }
         deck.remove(selected);
+        Game.getInstance().addCardToTheTable(selected);
         selected = null;
-        GameEvent gameEvent = new GameEvent(GameEvent.Target.DECK, GameEvent.Action.REMOVESEL, "");
+        GameEvent gameEvent1 = new GameEvent(GameEvent.Target.DECK, GameEvent.Action.REMOVESEL, "");
+        GameEvent gameEvent2 = new GameEvent(GameEvent.Target.TABLE, GameEvent.Action.ADDINGTOTABLE, "");
         setChanged();
-        notifyObservers(gameEvent);
+        notifyObservers(gameEvent1);
+        notifyObservers(gameEvent2);
     }
 
     public void setSelectedCard(Card card) {
@@ -73,6 +79,23 @@ public class CardDeck extends Observable {
         for (int i = 0; i < size; i++) {
             deck.add(imgbackCard);
         }
+    }
+
+    public void buyACard() {
+        Card aCard = null;
+        if (this.deck.size() < MAXIMUMSIZE) {
+            aCard = initializer.returnARandomCard();
+            this.deck.add(aCard);
+            boughtCard = aCard;
+            GameEvent gameEvent = new GameEvent(GameEvent.Target.DECK, GameEvent.Action.ADDINGTODECK, "");
+            setChanged();
+            notifyObservers(gameEvent);
+        }
+        return;
+    }
+
+    public Card getTheBoughtCard() {
+        return boughtCard;
     }
 }
 

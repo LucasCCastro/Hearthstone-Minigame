@@ -1,5 +1,7 @@
 package pucrs.ep.poo.cartas.modelo;
 
+import pucrs.ep.poo.cartas.gui.GameEvent;
+
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,9 +19,9 @@ public class Table extends Observable{
         tableCards = new ArrayList<>();
         selected = null;
 
-        for (int i = 0; i < MAXIMUMSIZE; i++) {
-            tableCards.add(initializer.returnARandomCard());
-        }
+//        for (int i = 0; i < MAXIMUMSIZE; i++) {
+//            tableCards.add(initializer.returnARandomCard());
+//        }
 
     }
 
@@ -37,6 +39,9 @@ public class Table extends Observable{
 
         if(tableCards.size() < MAXIMUMSIZE) {
             tableCards.add(aCard);
+            GameEvent event = new GameEvent(GameEvent.Target.TABLE,GameEvent.Action.ADDINGTOTABLE,"");
+            setChanged();
+            notifyObservers(event);
             return true;
         }
         return false;
@@ -45,6 +50,9 @@ public class Table extends Observable{
     public boolean removeCardFromTable(Card aCard) {
         if(aCard != null) {
             tableCards.remove(aCard);
+            GameEvent event = new GameEvent(GameEvent.Target.TABLE,GameEvent.Action.REMOVINGFROMTABLE,"");
+            setChanged();
+            notifyObservers(event);
             return true;
         }
         return false;
