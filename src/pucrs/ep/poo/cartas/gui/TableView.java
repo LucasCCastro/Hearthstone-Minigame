@@ -83,6 +83,18 @@ public class TableView extends HBox implements CardObserver, Observer {
         selectedCard = null;
     }
 
+    private void removingFromTable(){
+        selectedCard = cTable.getSelectedCard();
+        List cards = getChildren();
+        for(int i=0;i<cards.size();i++){
+            CardView cv = (CardView)cards.get(i);
+            if (cv.getCard() == selectedCard){
+                getChildren().remove(cv);
+                selectedCard = null;
+            }
+        }
+    }
+
     @Override
     public void update(Observable o, Object arg) {
         if (arg == null) {
@@ -98,6 +110,10 @@ public class TableView extends HBox implements CardObserver, Observer {
 
         if (ge.getAction() == GameEvent.Action.ADDINGTOTABLE) {
             addSel();
+        }
+
+        if (ge.getAction() == GameEvent.Action.REMOVINGFROMTABLE) {
+            removingFromTable();
         }
     }
 }

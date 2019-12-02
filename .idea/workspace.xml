@@ -2,21 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2237e684-1796-42da-988b-22971b6f74c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/images/board.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/eighteen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/eleven.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/fifteen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/fourteen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/nineteen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/seventeen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/sixteen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/thirteen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/thirty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/twelve.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/twenty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/twentyeight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/twentyfour.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/twentynine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/twentyone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/twentyseven.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/twentysix.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/twentythree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/twentytwo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/twntyfive.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/DeckView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/DeckView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameWindow$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameWindow.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/PlacarView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/PlacarView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/TableView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/TableView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/CardDeck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/CardDeck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/CardsInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/CardsInitializer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/DeckView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/DeckView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/GameWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/ImageFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/ImageFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/table.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/table.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/PlacarView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/PlacarView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/TableView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/TableView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/CardDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/CardDeck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/CardsInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/CardsInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/ImageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/ImageFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/TemporaryDbOfMethods.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +109,7 @@
       <workItem from="1574622022606" duration="3839000" />
       <workItem from="1575148385115" duration="6462000" />
       <workItem from="1575218306076" duration="21751000" />
-      <workItem from="1575243181738" duration="12333000" />
+      <workItem from="1575243181738" duration="20507000" />
     </task>
     <task id="LOCAL-00001" summary="Layout Organized">
       <created>1575218763959</created>
@@ -133,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575247679775</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Cards going from deck to table fixed">
+      <created>1575257151008</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1575257151008</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +186,7 @@
     <MESSAGE value="Card Object Withdraw and Layout fixed" />
     <MESSAGE value="Mana count and card playing made" />
     <MESSAGE value="Current Player and Mana adjusted in the layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Current Player and Mana adjusted in the layout" />
+    <MESSAGE value="Cards going from deck to table fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cards going from deck to table fixed" />
   </component>
 </project>

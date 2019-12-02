@@ -64,20 +64,13 @@ public class PlacarView extends GridPane implements Observer{
 //            }
 //        });
 
-        Button attackMinion = new Button("Attack Minion");
+        Button attackMinion = new Button("Attack Minions");
         this.add(attackMinion,0,0);
-        attackMinion.setOnAction(e -> {
-            //algo
-        });
+        attackMinion.setOnAction(e -> Game.getInstance().attackMinions());
 
         Button attackFace = new Button("Attack Face");
         this.add(attackFace,0,1);
-        attackFace.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent e) {
-                //algo
-            }
-        });
+        attackFace.setOnAction(e -> Game.getInstance().attackFace());
     }
 
     @Override

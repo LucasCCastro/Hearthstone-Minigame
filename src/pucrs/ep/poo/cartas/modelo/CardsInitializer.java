@@ -27,6 +27,26 @@ public class CardsInitializer {
         Card c8 = new Spell("8","img8",1, Spell.SpellType.damage,1); this.allCards.add(c8);
         Card c9 = new Spell("9","img9",7, Spell.SpellType.healing,5); this.allCards.add(c9);
         Card c10 = new Minion("10","img10",3,3,3); this.allCards.add(c10);
+        Card c11 = new Minion("11","img11",5,5,6); this.allCards.add(c11);
+        Card c12 = new Spell("12","img12",4,Spell.SpellType.damage,6); this.allCards.add(c12);
+        Card c13 = new Minion("13","img13",5,5,5); this.allCards.add(c13);
+        Card c14 = new Minion("14","img14",4,5,2); this.allCards.add(c14);
+        Card c15 = new Minion("15","img15",2,2,2); this.allCards.add(c15);
+        Card c16 = new Minion("16","img16",3,3,4); this.allCards.add(c16);
+        Card c17 = new Minion("17","img17",8,7,7); this.allCards.add(c17);
+        Card c18 = new Minion("18","img18",10,10,10); this.allCards.add(c18);
+        Card c19 = new Minion("19","img19",6,6,6); this.allCards.add(c19);
+        Card c20 = new Minion("20","img20",1,1,1); this.allCards.add(c20);
+        Card c21 = new Minion("21","img21",1,2,1); this.allCards.add(c21);
+        Card c22 = new Minion("22","img22",10,10,10); this.allCards.add(c22);
+        Card c23 = new Spell("23","img23",1,Spell.SpellType.damage,1); this.allCards.add(c23);
+        Card c24 = new Minion("24","img24",3,3,3); this.allCards.add(c24);
+        Card c25 = new Minion("25","img25",2,2,3); this.allCards.add(c25);
+        Card c26 = new Minion("26","img26",3,3,3); this.allCards.add(c26);
+        Card c27 = new Minion("27","img27",4,4,4); this.allCards.add(c27);
+        Card c28 = new Minion("28","img28",1,1,3); this.allCards.add(c28);
+        Card c29 = new Minion("29","img29",2,3,3); this.allCards.add(c29);
+        Card c30 = new Minion("30","img30",2,2,2); this.allCards.add(c30);
     }
 
 //    public void initializeCards() {
@@ -94,7 +114,7 @@ public class CardsInitializer {
     public Card returnARandomCard() {
         int index = randomGenerator.nextInt(allCards.size());
         Card aCard = allCards.get(index);
-
+        allCards.remove(aCard);
         return aCard;
     }
 

@@ -48,18 +48,17 @@ public class Table extends Observable{
 
     }
 
-    public boolean removeCardFromTable(Card aCard) {
-        if(aCard != null) {
-            tableCards.remove(aCard);
-            GameEvent event = new GameEvent(GameEvent.Target.TABLE,GameEvent.Action.REMOVINGFROMTABLE,"");
+
+    public boolean killCard(Card aCard) {
+        if (aCard != null) {
+            this.tableCards.remove(aCard);
+            GameEvent event = new GameEvent(GameEvent.Target.TABLE, GameEvent.Action.REMOVINGFROMTABLE, "");
             setChanged();
             notifyObservers(event);
             return true;
         }
         return false;
     }
-
-
         public void setSelectedCard(Card card){
             selected = card;
         }

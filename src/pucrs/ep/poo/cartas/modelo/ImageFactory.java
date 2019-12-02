@@ -29,7 +29,26 @@ public class ImageFactory{
             case "img8" : return("file:./images/eight.png");
             case "img9" : return("file:./images/nine.png");
             case "img10" : return("file:./images/ten.png");
-            case "imgBck" : return("file:./images/back.png");
+            case "img11" : return("file:./images/eleven.png");
+            case "img12" : return("file:./images/twelve.png");
+            case "img13" : return("file:./images/thirteen.png");
+            case "img14" : return("file:./images/fourteen.png");
+            case "img15" : return("file:./images/fifteen.png");
+            case "img16" : return("file:./images/sixteen.png");
+            case "img17" : return("file:./images/seventeen.png");
+            case "img18" : return("file:./images/eighteen.png");
+            case "img19" : return("file:./images/nineteen.png");
+            case "img20" : return("file:./images/twenty.png");
+            case "img21" : return("file:./images/twentyone.png");
+            case "img22" : return("file:./images/twentytwo.png");
+            case "img23" : return("file:./images/twentythree.png");
+            case "img24" : return("file:./images/twentyfour.png");
+            case "img25" : return("file:./images/twentyfive.png");
+            case "img26" : return("file:./images/twentysix.png");
+            case "img27" : return("file:./images/twentyseven.png");
+            case "img28" : return("file:./images/twentyeight.png");
+            case "img29" : return("file:./images/twentynine.png");
+            case "img30" : return("file:./images/thirty.png");
             default: throw new IllegalArgumentException("Invalid image Id");
         }
 

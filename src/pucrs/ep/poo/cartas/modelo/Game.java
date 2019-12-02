@@ -21,8 +21,8 @@ public class Game extends Observable {
 
     private Game() {
         this.cardsInitializer = new CardsInitializer();
-        this.lifePlayer1 = 30;
-        this.lifePlayer2 = 30;
+        this.lifePlayer1 = 50;
+        this.lifePlayer2 = 50;
         this.manaPlayer1 = 0;
         this.manaPlayer2 = 0;
         this.playMana = 0;
@@ -129,17 +129,12 @@ public class Game extends Observable {
                     playMana++;
                 }
                 this.manaPlayer1 = playMana;
-                gameEvent = new GameEvent(GameEvent.Target.TABLE, GameEvent.Action.NEWROUND, "");
-                GameEvent event = new GameEvent(GameEvent.Target.TABLE,GameEvent.Action.ADDINGTOTABLE,"");
+                //gameEvent = new GameEvent(GameEvent.Target.TABLE, GameEvent.Action.NEWROUND, "");
+                GameEvent event = new GameEvent(GameEvent.Target.TABLE, GameEvent.Action.ADDINGTOTABLE, "");
                 setChanged();
-                notifyObservers(gameEvent);
+               // notifyObservers(gameEvent);
                 notifyObservers(event);
-                //
-                //
-                System.out.println("player1 turn");
-                //All P1 possible actions will be here
-                //
-                //
+
                 if (this.lifePlayer2 <= 0) {
                     //
                     //The actions in case P1 wins will be here
@@ -157,16 +152,11 @@ public class Game extends Observable {
                 this.manaPlayer2 = playMana;
 
                 gameEvent = new GameEvent(GameEvent.Target.TABLE, GameEvent.Action.NEWROUND, "");
-                GameEvent anEvent = new GameEvent(GameEvent.Target.TABLE,GameEvent.Action.ADDINGTOTABLE,"");
+                GameEvent anEvent = new GameEvent(GameEvent.Target.TABLE, GameEvent.Action.ADDINGTOTABLE, "");
                 setChanged();
                 notifyObservers(gameEvent);
                 notifyObservers(anEvent);
-                //
-                //
-                System.out.println("player2 turn");
-                //All P2 possible actions will be here
-                //
-                //
+
                 if (this.lifePlayer1 <= 0) {
                     //
                     //The actions in case P2 wins will be here
@@ -180,8 +170,8 @@ public class Game extends Observable {
     public void removeSelected() {
         GameEvent gameEvent = null;
         if (player) {
-            if(deckP1.getSelectedCard()!=null) {
-                if(manaPlayer1 >= deckP1.getSelectedCard().getValue()) {
+            if (deckP1.getSelectedCard() != null) {
+                if (manaPlayer1 >= deckP1.getSelectedCard().getValue()) {
                     addCardToTheTable(deckP1.getSelectedCard());
                     deckP1.removeSel();
                 }
@@ -189,7 +179,7 @@ public class Game extends Observable {
 
         } else {
             if (deckP2.getSelectedCard() != null) {
-                if(manaPlayer2 >= deckP2.getSelectedCard().getValue()) {
+                if (manaPlayer2 >= deckP2.getSelectedCard().getValue()) {
                     addCardToTheTable(deckP2.getSelectedCard());
                     deckP2.removeSel();
                 }
@@ -209,7 +199,140 @@ public class Game extends Observable {
         }
     }
 
+    public void attackMinions() {
+        System.out.println("atacou minions");
+        System.out.println("p1 " + tableP1.getNumberOfTableCards());
+        System.out.println("p2 " + tableP2.getNumberOfTableCards());
+        if(tableP1.getNumberOfTableCards() > 0 || tableP2.getNumberOfTableCards() > 0) {
+            int attack = 0, defense = 0;
+            ArrayList<Card> p1CardsToDie = new ArrayList<>();
+            ArrayList<Card> p2CardsToDie = new ArrayList<>();
+            Minion.MinionType mType = null;
 
+            for (Card aCard : tableP1.getTableCards()) {
+                if (aCard instanceof Minion) { //What to do if the current player card is a minion
+                    attack = ((Minion) aCard).getAttack();
+                    defense = ((Minion) aCard).getDefense();
+                    if (((Minion) aCard).getType() != null) {
+                        mType = ((Minion) aCard).getType();
+                    }
+                    if (mType == Minion.MinionType.charge) {
+                        ((Minion) aCard).setAttack(((Minion) aCard).getAttack() + 2); //A minion receives +2 attack if it has CHARGE
+                    }
+                    if (mType == Minion.MinionType.taunt) {
+                        ((Minion) aCard).setDefense(((Minion) aCard).getDefense() + 2); //A minion receives +2 defense if it has TAUNT
+                    }
+
+                    for (Card opponentCard : tableP2.getTableCards()) {
+                        if (opponentCard instanceof Minion) { //What to do if the opponent player card is a minion
+                            ((Minion) opponentCard).setDefense(((Minion) opponentCard).getDefense() - attack); //opponent minion  taking damage from current player minion
+                            ((Minion) aCard).setDefense(((Minion) aCard).getDefense() - ((Minion) opponentCard).getAttack()); //current player minion taking damage from the opponent minion
+                            if (((Minion) opponentCard).getDefense() <= 0) {
+                                //tableP2.killCard(opponentCard);  //killing an opponent minion if it ends with 0 or less defense
+                                p2CardsToDie.add(opponentCard);
+                            }
+                            if (((Minion) aCard).getDefense() <= 0) {
+                                //tableP1.killCard(aCard); //killing current player minion if it ends with 0 or less defense
+                                p1CardsToDie.add(aCard);
+                                break;
+                            }
+                        } else if (opponentCard instanceof Spell && ((Spell) opponentCard).getType() == Spell.SpellType.damage) { //What to do if the opponent card is a damage spell
+                            ((Minion) aCard).setDefense(((Minion) aCard).getDefense() - opponentCard.getValue());
+                            if (((Minion) aCard).getDefense() <= 0) {
+                                //tableP1.killCard(aCard); //killing current player minion if it ends with 0 or less defense
+                                p1CardsToDie.add(aCard);
+                                break;
+                            }
+                           //deckP2.killCard(opponentCard); //killing a spell after it gives the damage
+                            p2CardsToDie.add(opponentCard);
+                        } else if (opponentCard instanceof Spell && ((Spell) opponentCard).getType() == Spell.SpellType.healing) { //What to do if the opponent card is a healing spell
+                            setLifePlayer2(getLifePlayer2() + aCard.getValue());
+                            //deckP2.killCard(opponentCard); //killing a spell after it gives the healing
+                            p2CardsToDie.add(opponentCard);
+                        }
+
+                    }
+                } else if (aCard instanceof Spell) {
+                    if (((Spell) aCard).getType() == Spell.SpellType.healing) {
+                        setLifePlayer1(getLifePlayer1() + aCard.getValue()); //Healing the current player with the healing spell value
+                    }
+                    if (((Spell) aCard).getType() == Spell.SpellType.damage) {
+                        for (Card opponentCard : tableP2.getTableCards()) {
+                            if (opponentCard instanceof Minion) {
+                                ((Minion) opponentCard).setDefense(((Minion) opponentCard).getDefense() - aCard.getValue()); //Giving the damage of the spell to the opponent minion
+                                //tableP1.killCard(aCard); //Killing the damage spell after it's used
+                                p1CardsToDie.add(aCard);
+                                break;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+            for(Card cardToDie : p1CardsToDie) {
+                tableP1.killCard(cardToDie);
+            }
+
+            for(Card cardToDie : p2CardsToDie) {
+                tableP2.killCard(cardToDie);
+            }
+            GameEvent gameEvent1 = new GameEvent(GameEvent.Target.TABLE, GameEvent.Action.REMOVINGFROMTABLE, "");
+            setChanged();
+            notifyObservers(gameEvent1);
+        }
+        System.out.println("depois p1 " + tableP2.getNumberOfTableCards());
+        System.out.println("depois p2 " + tableP2.getNumberOfTableCards());
+    }
+
+    public void attackFace() {
+        System.out.println("atacou face");
+        ArrayList<Card> cardsToDieP1 = new ArrayList<>();
+        ArrayList<Card> cardsToDieP2 = new ArrayList<>();
+        if (player) {
+            if (tableP2.getNumberOfTableCards() == 0) {
+
+                for (Card aCard : tableP1.getTableCards()) {
+                    if (aCard instanceof Minion) {
+                        setLifePlayer2(getLifePlayer2() - ((Minion) aCard).getAttack()); //giving the minion attack damage to the face
+                    } else if (aCard instanceof Spell && ((Spell) aCard).getType() == Spell.SpellType.damage) {
+                        setLifePlayer2(getLifePlayer2() - aCard.getValue()); //giving the damage spell damage to the face
+                        //tableP1.killCard(aCard); //killing a damage spell after it's used
+                        cardsToDieP1.add(aCard);
+                    } else if (aCard instanceof Spell && ((Spell) aCard).getType() == Spell.SpellType.healing) {
+                        setLifePlayer1(getLifePlayer1() + aCard.getValue()); //giving the healing spell value to own player life
+                        //tableP1.killCard(aCard); //killing the healing spell after it's used
+                        cardsToDieP1.add(aCard);
+                    }
+                }
+            }
+            for(Card theCardToDie : cardsToDieP1) {
+                tableP1.killCard(theCardToDie);
+            }
+
+        } else if (tableP1.getNumberOfTableCards() == 0) {
+            System.out.println("verificou que inimigo n tem carta");
+            for (Card aCard : tableP2.getTableCards()) {
+                if (aCard instanceof Minion) {
+                    System.out.println("verificou que se trata de um minion");
+                    setLifePlayer1(getLifePlayer1() - ((Minion) aCard).getAttack()); //giving the minion attack damage to the face
+                } else if (aCard instanceof Spell && ((Spell) aCard).getType() == Spell.SpellType.damage) {
+                    setLifePlayer1(getLifePlayer1() - aCard.getValue()); //giving the damage spell damage to the face
+                    //tableP2.killCard(aCard); //killing a damage spell after it's used
+                    cardsToDieP2.add(aCard);
+                } else if (aCard instanceof Spell && ((Spell) aCard).getType() == Spell.SpellType.healing) {
+                    setLifePlayer2(getLifePlayer2() + aCard.getValue()); //giving the healing spell value to own player life
+                    //tableP2.killCard(aCard); //killing the healing spell after it's used
+                    cardsToDieP2.add(aCard);
+                }
+            }
+        }
+        for(Card theCardToDie : cardsToDieP2) {
+            tableP2.killCard(theCardToDie);
+        }
+        System.out.println(getLifePlayer1());
+        System.out.println(tableP2.getNumberOfTableCards());
+    }
 
 
 }
