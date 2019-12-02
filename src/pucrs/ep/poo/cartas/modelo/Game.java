@@ -153,6 +153,10 @@ public class Game extends Observable {
             } else {
                 this.deckP2.buyACard();
                 this.manaPlayer2 = playMana;
+
+                gameEvent = new GameEvent(GameEvent.Target.TABLE, GameEvent.Action.NEWROUND, "");
+                setChanged();
+                notifyObservers(gameEvent);
                 //
                 //
                 System.out.println("player2 turn");

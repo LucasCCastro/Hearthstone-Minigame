@@ -2,35 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2237e684-1796-42da-988b-22971b6f74c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/desktop.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/eight.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/five.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/four.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/nine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/seven.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/six.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/ten.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/three.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/two.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/CardView$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/CardView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/CardView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/DeckView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/DeckView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameEvent$Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameEvent$Action.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameEvent$Target.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/GameEvent$Target.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/PlacarView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/PlacarView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/TableView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/gui/TableView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/CardDeck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/CardDeck.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/table.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hearthstone-Minigame/pucrs/ep/poo/cartas/modelo/table.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/CardView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/CardView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/DeckView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/DeckView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/GameEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/GameEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/PlacarView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/PlacarView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/TableView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/gui/TableView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/CardDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/CardDeck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pucrs/ep/poo/cartas/modelo/Table.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +79,7 @@
       <workItem from="1574622022606" duration="3839000" />
       <workItem from="1575148385115" duration="6462000" />
       <workItem from="1575218306076" duration="21751000" />
-      <workItem from="1575243181738" duration="2220000" />
+      <workItem from="1575243181738" duration="3798000" />
     </task>
     <task id="LOCAL-00001" summary="Layout Organized">
       <created>1575218763959</created>
@@ -133,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575230877413</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Mana count and card playing made">
+      <created>1575245468026</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575245468026</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +140,7 @@
     <MESSAGE value="Card Images Package Included" />
     <MESSAGE value="Card Images Package Included v2" />
     <MESSAGE value="Card Object Withdraw and Layout fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Card Object Withdraw and Layout fixed" />
+    <MESSAGE value="Mana count and card playing made" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mana count and card playing made" />
   </component>
 </project>
